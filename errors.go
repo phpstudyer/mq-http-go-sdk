@@ -1,3 +1,10 @@
+/**
+ * @Author: ZhaoYadong
+ * @Date: 2020-08-10 16:07:34
+ * @LastEditors: ZhaoYadong
+ * @LastEditTime: 2020-08-10 16:10:19
+ * @FilePath: /src/mq-http-go-sdk/errors.go
+ */
 package mq_http_sdk
 
 import (
@@ -14,7 +21,7 @@ var (
 	ErrSignMessageFailed       = errors.TN(ALIYUN_MQ_ERR_NS, 1, "sign message failed, {{.err}}")
 	ErrMarshalMessageFailed    = errors.TN(ALIYUN_MQ_ERR_NS, 2, "marshal message filed, {{.err}}")
 	ErrGeneralAuthHeaderFailed = errors.TN(ALIYUN_MQ_ERR_NS, 3, "general auth header failed, {{.err}}")
-	ErrMessageProperty		   = errors.TN(ALIYUN_MQ_ERR_NS, 4, "message property can not contains:\" ' < > & : |, {{.err}}")
+	ErrMessageProperty         = errors.TN(ALIYUN_MQ_ERR_NS, 4, "message property can not contains:\" ' < > & : |, {{.err}}")
 
 	ErrSendRequestFailed = errors.TN(ALIYUN_MQ_ERR_NS, 5, "send request failed, {{.err}}")
 
